@@ -1,0 +1,34 @@
+Script started on 2025-02-19 17:22:54+02:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="120" LINES="30"]
+[?2004h]0;root@DESKTOP-65MMN6I: /root@DESKTOP-65MMN6I:/# exitdocker start -i lucid_buck
+[?2004l[?2004h]0;root@90cbc4952b41: /root@90cbc4952b41:/# exitapt-get updateexit[Knano /usr/src/app/index.js [7Papt-get install nano
+[?2004lReading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 6%Reading package lists... 6%Reading package lists... 73%Reading package lists... 73%Reading package lists... 73%Reading package lists... 73%Reading package lists... 75%Reading package lists... 75%Reading package lists... 79%Reading package lists... 79%Reading package lists... 84%Reading package lists... 84%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 88%Reading package lists... 91%Reading package lists... 91%Reading package lists... 96%Reading package lists... 96%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree... Done
+Reading state information... 0% Reading state information... 98%Reading state information... Done
+Suggested packages:
+  hunspell
+The following NEW packages will be installed:
+  nano
+0 upgraded, 1 newly installed, 0 to remove and 15 not upgraded.
+Need to get 282 kB of archives.
+After this operation, 856 kB of additional disk space will be used.
+0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 nano amd64 7.2-2ubuntu0.1 [282 kB]
+1% [1 nano 2508 B/282 kB 1%]60% [1 nano 210 kB/282 kB 74%]                              100% [Working]              Fetched 282 kB in 1s (394 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package nano.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 4383 files and directories currently installed.)
+Preparing to unpack .../nano_7.2-2ubuntu0.1_amd64.deb ...
+Unpacking nano (7.2-2ubuntu0.1) ...
+Setting up nano (7.2-2ubuntu0.1) ...
+update-alternatives: using /bin/nano to provide /usr/bin/editor (editor) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/editor.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group editor) doesn't exist
+update-alternatives: using /bin/nano to provide /usr/bin/pico (pico) in auto mode
+update-alternatives: warning: skip creation of /usr/share/man/man1/pico.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group pico) doesn't exist
+[?2004h]0;root@90cbc4952b41: /root@90cbc4952b41:/# apt-get install nanoexit[Kapt-get updateexit[Knano /usr/src/app/index.js 
+[?2004l[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;54H(B[0;7m[ Reading... ](B[m[28;53H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 7.2 [37b/usr/src/app/index.js [45b [1;119H(B[m[29d(B[0;7m^G(B[m Help[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location    (B[0;7mM-U(B[m Undo[106G(B[0;7mM-A(B[m Set Mark[30d(B[0;7m^X(B[m Exit[30;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo[106G(B[0;7mM-6(B[m Copy[2d[?12l[?25h[?25l[1;75H(B[0;7m*[119G(B[m[?12l[?25h[2dc[?25l[?12l[?25ho[?25l[?12l[?25hn[?25l[?12l[?25hs[?25l[?12l[?25ho[?25l[?12l[?25hl[?25l[?12l[?25he[?25l[?12l[?25h.[?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[?12l[?25hg[?25l[?12l[?25h([?25l[?12l[?25h'[?25l[?12l[?25hH[?25l[?12l[?25he[?25l[?12l[?25hl[?25l[?12l[?25hl[?25l[?12l[?25ho[?25l[?12l[?25h[42m [49m(B[m[?25l[28d[K[?12l[?25h[2;19H W[?25l[?12l[?25ho[?25l[?12l[?25hr[?25l[?12l[?25hl[?25l[?12l[?25hd[?25l[?12l[?25h[2;13H(B[0;1m[35m'Hello World'[39m(B[m[?25l[?12l[?25h)[?25l[29;16H[15X[29;31H(B[0;7mM-D(B[m DOS Format [6b[29;61H(B[0;7mM-A(B[m Append[16X[29;93H(B[0;7mB(B[m Backup File[K[30;2H(B[0;7mC(B[m Cancel[16G[15X[30;31H(B[0;7mM-M(B[m Mac Format [8b[61G(B[0;7mM-P(B[m Prepend[19X[30;91H(B[0;7m^T(B[m Browse[K[28d(B[0;7mFile Name to Write: /usr/src/app/index.js [77b [28;42H(B[m[?12l[?25h[?25l[28;53H[1K (B[0;7m[ Writing... ](B[m[K[1;75H(B[0;7m [119G(B[m[28;53H(B[0;7m[ Wrote 1 line ](B[m[29;16H(B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut[29;61H(B[0;7m^T(B[m Execute     (B[0;7m^C(B[m Location[93G(B[0;7mU(B[m Undo [6b(B[0;7mM-A(B[m Set Mark[30;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Paste[61G(B[0;7m^J(B[m Justify     (B[0;7m^/(B[m Go To Line  (B[0;7mM-E(B[m Redo [106G(B[0;7mM-6(B[m Copy[?12l[?25h[2;27H[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h]0;root@90cbc4952b41: /root@90cbc4952b41:/# [Knano /usr/src/app/index.js [1P[1P[1P[1P[1@c[1@a[1@t
+[?2004lconsole.log('Hello World')
+[?2004h]0;root@90cbc4952b41: /root@90cbc4952b41:/# [Kcat /usr/src/app/index.js [1@nano /usr/src/app/index.js [1Pcat /usr/src/app/index.js [Kexit
+[?2004lexit
+[?2004h]0;root@DESKTOP-65MMN6I: /root@DESKTOP-65MMN6I:/# docker start -i lucid_buck[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K
+[?2004lexit
+
+Script done on 2025-02-19 17:24:49+02:00 [COMMAND_EXIT_CODE="0"]
