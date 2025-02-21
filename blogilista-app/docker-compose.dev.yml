@@ -1,0 +1,52 @@
+services:
+  mongo:
+    image: mongo
+    ports:
+    - 3456:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+      MONGO_INITDB_DATABASE: the_database
+    volumes: 
+      - ./blogilista-backend/mongo/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+      - ./blogilista-backend/mongo_data:/data/db
+  
+  back:
+    image: blogapp-back-dev
+    build:
+      context: ./blogilista-backend
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./blogilista-backend:/usr/src/app
+      - back-node_modules:/usr/src/app/node_modules
+    environment: 
+      - MONGODB_URI=mongodb://the_username:the_password@mongo:27017/the_database
+      - TEST_MONGODB_URI=mongodb://the_username:the_password@mongo:27017/the_database
+      - PORT=3001
+      - SECRET=passingTheseSafelyWasNotPartOfTheCourse
+    container_name: blogapp-back-dev
+
+  front:
+    image: blogapp-front-dev
+    build: 
+      context: ./blogilista-frontend
+      dockerfile: dev.Dockerfile
+    volumes:
+      - ./blogilista-frontend:/usr/src/app
+      - front-node_modules:/usr/src/app/node_modules
+    container_name: blogapp-front-dev
+
+  nginx:
+    image: nginx:1.20.1
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - 8080:80
+    container_name: blogapp-reverse-proxy
+    depends_on:      
+      - front
+
+
+volumes:
+  back-node_modules:
+  front-node_modules:

@@ -1,0 +1,8 @@
+POST http://localhost:8080/api/api/users
+Content-Type: application/json
+
+{
+    "username": "test",
+    "name": "Firstname Lastname",
+    "password": "salasana"
+}
