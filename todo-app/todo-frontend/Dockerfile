@@ -6,12 +6,18 @@ COPY . .
 
 RUN npm ci
 
-ENV VITE_BACKEND_URL="http://localhost:3000"
-
-RUN npm run test
+ENV VITE_BACKEND_URL="api"
 
 RUN npm run build
 
-FROM nginx:1.25-alpine
+FROM node:20 AS test-stage
 
-COPY --from=build-stage /usr/src/app/dist /usr/share/nginx/html
+RUN npm run test
+
+FROM node:20 AS deploy-stage
+
+WORKDIR /usr/src/app
+
+COPY --from=build-stage /usr/src/app/ /usr/src/app/
+
+CMD ["npm","run", "preview", "--", "--host"]
